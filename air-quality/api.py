@@ -219,25 +219,12 @@ class PollutionAPI(object):
 
         return site_data
 
-    # def get_station_delta(self, site_id, delta, time_stamp, *args, **kwargs):
-    #     """
-    #         get historical data based on delta.
-    #     """
-    #     payload = self.STATION_VIEW_DATA_RESOURCE['POST_DATA'](site_id, delta, time_stamp)
-    #     request = self._post(self.STATION_VIEW_DATA_RESOURCE['URI'], data=payload)
-
-    #     json_data = request.json()
-
-    #     site_info_key = 'siteInfo'
-    #     table_data_key = 'tableData'
-    #     body_content_key = 'bodyContent'
-
-    #     site_data = {
-    #         'site_data': json_data[site_info_key],
-    #         'parameters': json_data[table_data_key][body_content_key]
-    #     }
-
-    #     return site_data
+    def get_station_delta(self, site_id, delta, time_stamp, *args, **kwargs):
+        """
+            get historical data based on delta.
+            TODO: delta API
+        """
+        pass
 
 def get_station(json_data, *args, **kwargs):
     """
